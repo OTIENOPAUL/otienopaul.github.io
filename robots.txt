@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://otieno.github.io/sitemap.xml
