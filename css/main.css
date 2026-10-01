@@ -83,6 +83,7 @@ h3{font-size:1.2rem}
 .data-chip{position:absolute;padding:.55rem .75rem;background:var(--card);border:1px solid var(--line);border-radius:10px;color:var(--ink-soft);font:600 .66rem var(--mono);letter-spacing:.04em;box-shadow:0 10px 24px rgba(21,24,28,.08)}
 .chip-one{left:-6%;top:8%}
 .chip-two{right:-8%;bottom:12%}
+.chip-three{left:2%;bottom:-4%}
 
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .pillar{padding:1.6rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
@@ -124,6 +125,12 @@ h3{font-size:1.2rem}
 .pill-row{display:flex;flex-wrap:wrap;gap:.45rem}
 .pill{padding:.32rem .65rem;border-radius:999px;background:var(--accent-soft);font:600 .66rem var(--mono);color:var(--accent-ink)}
 
+.capability-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.1rem}
+.capability-card{padding:1.5rem 1.6rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.capability-card h3{font-size:1.02rem;margin-bottom:.85rem}
+.capability-card ul{margin:0;padding-left:1.05rem;color:var(--muted);font-size:.87rem;line-height:1.55;display:grid;gap:.5rem}
+.capability-card li strong{color:var(--ink-soft)}
+
 .page-hero{padding:5rem 0 3.5rem}
 .detail-hero{padding:4.5rem 0 3rem;background:var(--bg-alt)}
 .detail-preview{min-height:220px;border-radius:var(--radius);background:linear-gradient(135deg,var(--ink),#26302B);display:flex;align-items:flex-end;padding:1.4rem;position:relative;overflow:hidden}
@@ -155,7 +162,7 @@ h3{font-size:1.2rem}
   .portrait-wrap{width:min(56vw,260px)}
   .pillars,.project-grid{grid-template-columns:repeat(2,1fr)}
   .stat-grid{grid-template-columns:repeat(2,1fr)}
-  .role-card,.two-col,.edu-card{grid-template-columns:1fr}
+  .role-card,.two-col,.edu-card,.capability-grid{grid-template-columns:1fr}
 }
 @media(max-width:620px){
   .section{padding:3.5rem 0}
