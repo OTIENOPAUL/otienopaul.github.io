@@ -105,6 +105,8 @@ h3{font-size:1.2rem}
 .project-content p{color:var(--muted);font-size:.94rem}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem}
 .tags span{padding:.28rem .55rem;border-radius:999px;background:var(--accent-soft);font:600 .64rem var(--mono);color:var(--accent-ink)}
+.tags span.sector{background:transparent;border:1px solid var(--accent);color:var(--accent)}
+
 .project-link{color:var(--accent-ink);font-weight:700;margin-top:auto}
 
 .path{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;font-weight:700}
