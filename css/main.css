@@ -129,10 +129,24 @@ h3{font-size:1.2rem}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem}
 .tags span{padding:.28rem .55rem;border-radius:999px;background:var(--accent-soft);font:600 .64rem var(--mono);color:var(--accent-ink)}
 .project-link{color:var(--accent-ink);font-weight:700;margin-top:auto}
+.field-more-link{display:block;padding-top:.8rem;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;font-weight:600;transition:color .2s ease}
+.field-more-link:hover{color:var(--accent-ink)}
 
 .path{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;font-weight:700}
 .path span{padding:.45rem .7rem;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink-soft);font-size:.88rem}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,7vw,6rem);align-items:start}
+
+.case-study-layout{display:grid;grid-template-columns:190px minmax(0,1fr);gap:clamp(2rem,7vw,6rem);align-items:start}
+.case-study-index{position:sticky;top:100px;display:grid;gap:.75rem;padding-left:1rem;border-left:1px solid var(--line);font-size:.84rem;color:var(--muted)}
+.case-study-index strong{color:var(--ink);font-size:.9rem;margin-bottom:.2rem}
+.case-study-index a{transition:color .2s ease}
+.case-study-index a:hover,.case-study-index a[aria-current="location"]{color:var(--accent-ink)}
+.case-study-content{max-width:760px}
+.case-study-content section{padding:0 0 2.5rem;margin:0 0 2.5rem;border-bottom:1px solid var(--line);scroll-margin-top:100px}
+.case-study-content section h2{font-size:clamp(1.45rem,2.7vw,2rem);margin-bottom:1rem}
+.case-study-content section p,.case-study-content section li{color:var(--ink-soft)}
+.case-study-content section ul{display:grid;gap:.8rem;padding-left:1.2rem}
+.case-study-actions{display:flex;align-items:center;flex-wrap:wrap;gap:1.25rem;margin-top:2rem}
 
 .timeline{display:grid;gap:1rem}
 .role-card{display:grid;grid-template-columns:230px 1fr;border:1px solid var(--line);border-radius:var(--radius);background:var(--card);overflow:hidden}
@@ -187,6 +201,10 @@ h3{font-size:1.2rem}
   .btn-row{display:grid}
   .btn{width:100%}
   .download-box{flex-direction:column;align-items:flex-start}
+  .case-study-layout{grid-template-columns:1fr;gap:2rem}
+  .case-study-index{position:static;display:flex;overflow-x:auto;gap:1rem;padding:0 0 .75rem;border-left:0;border-bottom:1px solid var(--line);white-space:nowrap}
+  .case-study-index strong{display:none}
+  .case-study-actions{align-items:stretch;flex-direction:column}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}

@@ -133,5 +133,28 @@
         });
       });
     });
+    var requestedFilter = document.getElementById(location.hash.slice(1));
+    if (requestedFilter && requestedFilter.classList.contains('filter-btn')) {
+      requestedFilter.click();
+    }
+  }
+
+  // Keep the case-study contents list in step with the section being read.
+  var caseSections = document.querySelectorAll('.case-study-content section[id]');
+  var caseLinks = document.querySelectorAll('.case-study-index a[href^="#"]');
+  if (caseSections.length && caseLinks.length && 'IntersectionObserver' in window) {
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        caseLinks.forEach(function (link) {
+          if (link.getAttribute('href') === '#' + entry.target.id) {
+            link.setAttribute('aria-current', 'location');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      });
+    }, { rootMargin: '-18% 0px -68% 0px', threshold: 0 });
+    caseSections.forEach(function (section) { sectionObserver.observe(section); });
   }
 })();
