@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://otieno.github.io/sitemap.xml
+Sitemap: https://otienopaul.github.io/sitemap.xml
